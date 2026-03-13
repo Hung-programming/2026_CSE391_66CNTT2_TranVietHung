@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký tài khoản</title>
+    <link rel="stylesheet" href="bai2.css">
+</head>
+<body>
+    <h2>Form Đăng Ký</h2>
+
+    <form id="registerForm">
+
+        <label>Họ và tên</label>
+        <input type="text" id="fullname">
+        <span class="error" id="fullnameError"></span>
+
+        <label>Email</label>
+        <input type="text" id="email">
+        <span class="error" id="emailError"></span>
+
+        <label>Số điện thoại</label>
+        <input type="text" id="phone">
+        <span class="error" id="phoneError"></span>
+
+        <label>Mật khẩu</label>
+        <input type="password" id="password">
+        <span class="error" id="passwordError"></span>
+
+        <label>Xác nhận mật khẩu</label>
+        <input type="password" id="confirm">
+        <span class="error" id="confirmError"></span>
+
+        <label>Giới tính</label>
+        <input type="radio" name="gender" value="Nam"> Nam
+        <input type="radio" name="gender" value="Nữ"> Nữ
+        <span class="error" id="genderError"></span>
+
+        <br><br>
+
+        <label>
+        <input type="checkbox" id="terms">
+        Tôi đồng ý điều khoản
+        </label>
+        <span class="error" id="termsError"></span>
+
+        <br><br>
+
+        <button type="submit">Đăng ký</button>
+    </form>
+
+    <div id="success"></div>
+
+    <script src="bai2.js"></script>
+</body>
+</html>
